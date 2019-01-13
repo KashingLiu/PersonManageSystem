@@ -30,9 +30,9 @@
 		<div class="container">
 				<div class="navbar-brand">
 					<!-- COMPANY LOGO -->
-<!--					<a href="index.html">-->
-<!--						<img src="img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">-->
-<!--					</a>-->
+					<a href="index.html">
+						<img src="<?php echo base_url()?>Public/img/logo/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
+					</a>
 					<!-- /COMPANY LOGO -->
 					<!-- TEAM STATUS FOR MOBILE -->
 					<div class="visible-xs">
@@ -82,11 +82,16 @@
 				<div id="sidebar" class="sidebar">
 					<div class="sidebar-menu nav-collapse">
 						<div class="divide-20"></div>
+
+                        <div id="search-bar">
+                            <input class="search" type="text" placeholder="Search"><i class="fa fa-search search-icon"></i>
+                        </div>
+
 						<!-- 左侧列表 SIDEBAR MENU -->
 						<ul>
 							<li>
-								<a href="index.html">
-								<i class="fa fa-tachometer fa-fw"></i> <span class="menu-text">Dashboard</span>
+								<a href="<?php echo base_url()?>index.php/index/home">
+								<i class="fa fa-tachometer fa-fw"></i> <span class="menu-text">欢迎使用</span>
 								<span class="selected"></span>
 								</a>					
 							</li>
@@ -108,12 +113,12 @@
 							</li>
 							<li class="has-sub">
 								<a href="javascript:;" class="">
-								<i class="fa fa-pencil-square-o fa-fw"></i> <span class="menu-text">统计信息查看</span>
+								<i class="fa fa-bar-chart-o fa-fw"></i> <span class="menu-text">统计信息查看</span>
 								</a>
 							</li>
 							<li class="has-sub">
 								<a href="javascript:;" class="">
-								<i class="fa fa-bar-chart-o fa-fw"></i> <span class="menu-text">系统管理</span>
+								<i class="fa fa-pencil-square-o fa-fw"></i> <span class="menu-text">系统管理</span>
 								<span class="arrow"></span>
 								</a>
 								<ul class="sub">
@@ -162,12 +167,11 @@
 									<ul class="breadcrumb">
 										<li>
 											<i class="fa fa-home"></i>
-											<a href="index.html">Home</a>
+											<a href="index.html">开始</a>
 										</li>
 										<li>
-											<a href="#">More Pages</a>
+											<a href="#">欢迎使用</a>
 										</li>
-										<li>User Profile</li>
 									</ul>
 									<!-- /BREADCRUMBS -->
 									<div class="clearfix">
